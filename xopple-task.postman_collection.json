@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "506743ca-275f-4e7b-a3f8-26e3d00d2fd0",
+		"name": "xopple-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11839452"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "hinal",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "thakrar",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "1234567897",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abc@yopmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/?firstName=hinal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/?firstName=hinal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "hinal"
+						},
+						{
+							"key": "lastName",
+							"value": "thakrar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
